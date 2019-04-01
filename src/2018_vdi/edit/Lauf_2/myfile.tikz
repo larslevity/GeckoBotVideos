@@ -1,0 +1,58 @@
+% This file was created by matplotlib2tikz v0.6.15.
+\begin{tikzpicture}
+
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+
+\begin{axis}[
+xlabel={inclination angle~~$\delta$~~~($^\circ$)},
+ylabel={motion~~~(cm / cycle)},
+xmin=-2.5, xmax=52.5,
+ymin=0, ymax=12.442328042328,
+width=6cm,
+height=4cm,
+tick align=outside,
+tick pos=left,
+x grid style={lightgray!92.026143790849673!black},
+y grid style={lightgray!92.026143790849673!black},
+legend style={draw=white!80.0!black},
+legend entries={{footUL},{footUR},{footLL},{footLR}},
+legend cell align={left}
+]
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color1}
+\addlegendimage{no markers, color2}
+\addlegendimage{no markers, color3}
+\addplot [semithick, color0]
+table {%
+0 12
+20 8.52910052910053
+40 5.48148148148149
+50 4.2962962962963
+};
+\addplot [semithick, color1]
+table {%
+0 11.8518518518519
+20 8.00000000000001
+40 4.35978835978836
+50 3.15343915343916
+};
+\addplot [semithick, color2]
+table {%
+0 11.7248677248677
+20 7.5978835978836
+40 4.44444444444445
+50 3.47089947089948
+};
+\addplot [semithick, color3]
+table {%
+0 10.9206349206349
+20 8.52910052910053
+40 5.29100529100529
+50 4.04232804232805
+};
+\end{axis}
+
+\end{tikzpicture}
